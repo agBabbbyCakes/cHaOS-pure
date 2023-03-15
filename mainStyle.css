@@ -48,3 +48,132 @@ body {
     height:100vh;
     background-color: red;
 }
+
+html {
+    background-color:antiquewhite;
+}
+
+/*Shared Wraps */
+
+.mainWrap
+{
+    width:100%;
+    height:100vw;
+}
+
+.mainwrap-SelectStage {
+    width:100%;
+    height:100vw;
+    background-color:#00C0EA;
+}
+
+.blockHeader {
+    width:100%;
+    height:5vw;
+    background-color:red;
+}
+
+/*Shared Two Column Layout*/
+
+.column {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*Button Wraps and Float Positions*/
+.buttonWrap-RightSide
+{
+float:right;
+}
+
+/*BUTTON STYLES*/
+
+.button_next{
+    width: 337px;
+    height: 78.56px;
+    border-radius:9px;
+    border-color:black;
+    border-style:solid;
+    border-width:thin;
+    background-color:transparent;
+
+}
+
+.button_next:hover {
+    background-color:rgb(0, 255, 213);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Shared 3x5 Grid */
+/*THIS IS THE 3x5 Grid */
+
+.grid-container-3x5 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(5, 135px);
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-item-3x5 {
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-3x5:hover {
+    background-color: #E9515D;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .grid-container-3x5 {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(5, 135px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .grid-container-3x5 {
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(5, 135px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+/*END OF 3x5 GRID STYLE SETTINGS */
+
+
+/*Screen SELECT VIEWPORT */
+
+.screenSelect_viewport_wrap {
+
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-color:aqua;
+
+}

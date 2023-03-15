@@ -2,7 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
+        <script src="https://d3js.org/d3.v7.min.js"></script>
         <link rel="stylesheet" href="mainStyle.css">
         <title>
             cHaOSnet - pure
@@ -13,18 +13,13 @@
     <div class="title">
         <h1>cHaOSnet</h1></div>
 </header>
-
+<nav>
+   
+</nav>
 <!-- Make a wide Wrap-->
 <div id="app">
 <div class="container">
     <!--Make a big title for the website-->
-
-        <!-- Make a big center button-->
-        <div class="center">
-            
-               
-           
-        </div>
 
         <div v-show="selectedTab === 'tab1'">
             <button @click="selectedTab = 'tab2'">
@@ -32,7 +27,9 @@
             </button>
                 <h2>First</h2>
                 <p>Title Screen - Have a cheeky animation - and give folks a brief description of what they're about to walk into</p>
-            
+                <svg width="400" height="300"></svg>
+
+                <script src="d3sample.js"></script>
 
             </div>
 
@@ -46,13 +43,55 @@
               
        <!-- TAB 3 = SELECT STAGE -->
         <div v-show="selectedTab === 'tab3'">
-<div class="contentBlock-select">     Yep yep   </div>
+            <div class="contentBlock-select">
+                
+            First Line of it
+
+            <section>
+                <div class="mainWrap">
+                    <div class="mainwrap-SelectStage">
+                        <div class="block1">
+                            <div class="blockHeader">
+                                <h2>Choose Your Environment</h2>
+                                </div>
+                            <div class="row">
+                                <div class="column">
+                                    <h3>Select a network </h3>
+                                        <div class="grid-container-3x5">
+                                            <div class="grid-item-3x5">1</div>
+                                            <div class="grid-item-3x5">1</div>
+                                            <div class="grid-item-3x5">1</div>
+                                            <div class="grid-item-3x5">1</div>
+                                            <div class="grid-item-3x5">1</div>
+                                            <div class="grid-item-3x5">1</div>
+                                          
+                                        </div>
+                                </div>
+                                <div class="column">
+                                    <h2>Column 2</h2>
+                                    <div class="screenSelect_viewport_wrap">.</div>
+                                    <h1>This is the Name of the Stage</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ultrices ipsum, vel feugiat tellus volutpat sit amet. Suspendisse potenti. Morbi id sem ac justo vestibulum rhoncus.</p>
+                                    <div class="buttonWrap-RightSide">
+                                        <button class="button_next">Next : Choose Your Bot</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            Last Line of it
+
+            </div>   </div>
+            <!-- END OF TAB 3 (Select Stage) -->
 
 
 
 
-
-            </div>
+         
           
 </div>
 </div>

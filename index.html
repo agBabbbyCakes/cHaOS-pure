@@ -1,10 +1,73 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <link rel="stylesheet" href="mainStyle.css">
         <title>
-            cHaOSnet
+            cHaOSnet - pure
         </title>
     </head>
     <body>
+<header>
+    <div class="title">
+        <h1>cHaOSnet</h1></div>
+</header>
+
+<!-- Make a wide Wrap-->
+<div id="app">
+<div class="container">
+    <!--Make a big title for the website-->
+
+        <!-- Make a big center button-->
+        <div class="center">
+            
+               
+           
+        </div>
+
+        <div v-show="selectedTab === 'tab1'">
+            <button @click="selectedTab = 'tab2'">
+                <h1>Start</h1>
+            </button>
+                <h2>First</h2>
+                <p>Title Screen - Have a cheeky animation - and give folks a brief description of what they're about to walk into</p>
+            
+
+            </div>
+
+
+        <div v-show="selectedTab === 'tab2'">
+            <button @click="selectedTab = 'tab3'">
+                <h1>Select Stage</h1>
+            </button>
+            </div>
+              
+              
+       <!-- TAB 3 = SELECT STAGE -->
+        <div v-show="selectedTab === 'tab3'">
+<div class="contentBlock-select">     Yep yep   </div>
+
+
+
+
+
+            </div>
+          
+</div>
+</div>
+
+
+<!-- VUE TAB SWITCH -->
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        selectedTab: 'tab1'
+      }
+    });
+    </script>
+
 
     </body>
     </html>

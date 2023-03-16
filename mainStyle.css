@@ -3,6 +3,18 @@ body {
 }
 
 
+h3 {
+    font-size:24px;
+
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+p {
+    font-size:2vw;
+    margin:0;
+
+}
 
 
 /*Make a class called "container" and give it a width of 960px and a margin of 0 auto. */
@@ -70,7 +82,7 @@ html {
 .blockHeader {
     width:100%;
     height:5vw;
-    background-color:red;
+    background-color:rgb(0, 255, 183);
 }
 
 /*Shared Two Column Layout*/
@@ -176,4 +188,35 @@ float:right;
     overflow: hidden;
     background-color:aqua;
 
+}
+
+/*Make a grid with 4x3 and colorful clickable and dynamic items */
+.grid-container-3x4 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+   
+
+}
+
+.grid-item-3x4 {
+    background-color: #ddd;
+    text-align: center;
+    overflow:hidden;
+    width:200px;
+    height:300px;
+    /*Make Inner Contents perfectly centered and vertically aligned*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-color:black;
+    border-width:thin;
+    /*END OF Make Inner Contents perfectly centered and vertically aligned*/
+}
+
+.buttonRight {
+    float:right;
+    float:bottom;
 }

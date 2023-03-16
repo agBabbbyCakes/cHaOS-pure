@@ -9,16 +9,15 @@
         </title>
     </head>
     <body>
-<header>
-    <div class="title">
-        <h1>cHaOSnet</h1></div>
-</header>
-<nav>
-   
-</nav>
-<!-- Make a wide Wrap-->
-<div id="app">
-<div class="container">
+            <header>
+                    <div class="title">
+                        <a href="#"><button><h1>cHaOSnet</h1></button></a>
+                    </div>
+            </header>
+
+    <!-- Make a wide Wrap-->
+    <div id="app">
+    <div class="container">
     <!--Make a big title for the website-->
 
         <div v-show="selectedTab === 'tab1'">
@@ -41,7 +40,7 @@
             </div>
               
               
-       <!-- TAB 3 = SELECT STAGE -->
+    <!-- TAB 3 = SELECT STAGE -->
         <div v-show="selectedTab === 'tab3'">
             <div class="contentBlock-select">
                 
@@ -73,7 +72,7 @@
                                     <h1>This is the Name of the Stage</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ultrices ipsum, vel feugiat tellus volutpat sit amet. Suspendisse potenti. Morbi id sem ac justo vestibulum rhoncus.</p>
                                     <div class="buttonWrap-RightSide">
-                                        <button class="button_next">Next : Choose Your Bot</button>
+                                        <button class="button_next" @click="selectedTab = 'tab4'">Next : Choose Your Bot</button>
                                     </div>
                                 </div>
                             </div>
@@ -86,13 +85,79 @@
             Last Line of it
 
             </div>   </div>
-            <!-- END OF TAB 3 (Select Stage) -->
+    <!-- END OF TAB 3 (Select Stage) -->
 
 
 
 
-         
-          
+    <!-- TAB 4 (Select Your Bot )-->
+            <div v-show="selectedTab === 'tab4'">
+                <section>
+                <div class="contentBlock-select">
+                    <div class="mainWrap">
+                        <div class="mainwrap-SelectStage">
+                            <div class="block1">
+                                <div class="blockHeader">
+                                    <h2>Choose Your Bot</h2>
+                                    <!-- Make a 3x4 grid with a gap of 10px -->
+                                    <div class="grid-container-3x4">
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+    
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                        <div class="grid-item-3x4">
+                                            <!-- BOT NAME, TYPE, ICON, -->
+                                            <h3>Bot Name</h3>
+                                            <p>Bot Type</p>
+                                            <img src="https://via.placeholder.com/150" alt="Bot Icon">
+                                        </div>
+                                    
+                                        </div>
+                                    </div>
+                                    <!-- Make a button that links to another vue tab -->
+                                    <div class="buttonRight">
+                                <button>Deploy Script</button></div>
+                                </section>
+                </div>          
 </div>
 </div>
 

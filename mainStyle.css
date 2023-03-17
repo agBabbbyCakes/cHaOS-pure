@@ -16,6 +16,10 @@ p {
 
 }
 
+header {
+    position:absolute;
+}
+
 
 /*Make a class called "container" and give it a width of 960px and a margin of 0 auto. */
 .container {
@@ -219,4 +223,26 @@ float:right;
 .buttonRight {
     float:right;
     float:bottom;
+}
+
+.wrapReview {
+    /*Make Inner Contents perfectly centered and vertically aligned*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    /*END OF Make Inner Contents perfectly centered and vertically aligned*/
+    width:100%;
+    height:100vh;
+    background-color:lightblue;
+
+}
+
+
+
+
+.logo {
+    width:200px;
+    height:200px;
+    background-color:lightblue;
 }

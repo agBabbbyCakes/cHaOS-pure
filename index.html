@@ -11,7 +11,9 @@
     <body>
             <header>
                     <div class="title">
-                        <a href="#"><button><h1>cHaOSnet</h1></button></a>
+                        <a href="index.html"><button><h1>cHaOSnet</h1></button></a>
+                        <a href="#"><button><h2>Restart</h2></button></a>
+                        <a href="chooseBot.html"><button><h2>selectBot</h2></button></a>
                     </div>
             </header>
 
@@ -23,6 +25,11 @@
         <div v-show="selectedTab === 'tab1'">
             <button @click="selectedTab = 'tab2'">
                 <h1>Start</h1>
+                <!-- Create a placeholder splash image for the welcome screen on the website -->
+                <div class="splash">
+                    <img src="bot_big.png" class="logo">
+                    
+                </div>
             </button>
                 <h2>First</h2>
                 <p>Title Screen - Have a cheeky animation - and give folks a brief description of what they're about to walk into</p>
@@ -72,7 +79,7 @@
                                     <h1>This is the Name of the Stage</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ultrices ipsum, vel feugiat tellus volutpat sit amet. Suspendisse potenti. Morbi id sem ac justo vestibulum rhoncus.</p>
                                     <div class="buttonWrap-RightSide">
-                                        <button class="button_next" @click="selectedTab = 'tab4'">Next : Choose Your Bot</button>
+                                        <a href="chooseBot.html"><button class="button_next">Next : Choose Your Bot</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -155,11 +162,42 @@
                                     </div>
                                     <!-- Make a button that links to another vue tab -->
                                     <div class="buttonRight">
-                                <button>Deploy Script</button></div>
+                                <button @click="selectedTab = 'tab5'" >Deploy Script</button></div>
                                 </section>
                 </div>          
+
+
+
+<!-- Tab 5 = DEPLOY RECEIPT -->
+
+<div v-show="selectedTab === 'tab5'">
+    <section>
+    <div class="wrapReview">
+    <!-- Create a item review list in the style of receipt -->
+        
+    This is where the result will go - 
+    or the recipt really before you are about to deploy for $
+    <div class="bottomButton">
+        <button @click="selectedTab = 'tab1'">Deploy</button>
+    </div>
+    </div>
+
+    </section>
+<!-- TAB 5 = Deploy Receipt ENDER -->
 </div>
-</div>
+
+
+<!-- Tab 6 = PAYMENT -->
+
+<!-- Tab 6 = PAYMENT -->
+
+
+
+<!-- END OF ALL APP -->
+
+<!-- END OF ALL APP -->
+
+
 
 
 <!-- VUE TAB SWITCH -->

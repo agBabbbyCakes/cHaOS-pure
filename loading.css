@@ -1,0 +1,23 @@
+/* Create an svg of a rocketship animation that infinitely loops and rotates */
+.rocketshipAnimation{
+    animation: rocket 30s ease-in delay 100 direction fill-mode;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-delay: 100ms;
+
+    animation-duration: 30s;
+ 
+}
+/*  */
+  .rocketship { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+
+  }

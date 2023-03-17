@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" href="bot.css">
+        <link rel="stylesheet" href="loading.css">
+        <title>loading</title>
+    </head>
+    <body>
+        <!-- MAKE A PERFECTLY CENTERED LOADING SCREEN WITH LOTS OF ANIMATION -->
+        <div>
+            <div class="loader">
+                <h1>LOADING</h1>
+            </div>
+            <script>
+                var loader = document.querySelector(".loader");
+                window.addEventListener("load", vanish);
+                function vanish() {
+                    loader.classList.add("disappear");
+                }
+
+                //after 10 seconds load index.html 
+                setTimeout(function () {
+                    window.location.href = "view.html";
+                }, 1500);
+            </script>
+        </div>
+        <div></div>
+    </body>
+</html>

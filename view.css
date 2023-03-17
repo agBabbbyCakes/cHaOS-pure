@@ -1,0 +1,52 @@
+.mainSplash {
+    /*Create a giant welcome page*/
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+    width: 100vw;
+
+display:flex;
+
+}
+
+.center {
+    /*Create a giant welcome page*/
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C0EA;
+}
+
+.menu-results {
+    /*Create a giant welcome page*/
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C0EA;
+}
+
+.button_results {
+    /*Create a giant welcome page*/
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+
+    /*background-image: url("https://i.imgur.com/2Z4mHhj.jpg");*/
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #63e2ff;
+}
